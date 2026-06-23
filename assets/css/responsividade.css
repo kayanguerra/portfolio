@@ -1,8 +1,0 @@
-/* Responsividade extra — regras de layout de página completa */
-/* As regras principais já estão em style.css com media queries inline */
-
-/* Home full-height */
-@media (min-width: 1025px) {
-    .home { padding: 0 2rem; }
-    .text-home h1 { font-size: 6rem; }
-}
