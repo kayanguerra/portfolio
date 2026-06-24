@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let percentage = 0;
     const loadingScreen = document.getElementById('loading-screen');
     const loadingPercentage = document.getElementById('loading-percentage');
+
+    // ← ADICIONA essa verificação
+    if (!loadingScreen || !loadingPercentage) return;
+
+    let percentage = 0;
 
     const loadingInterval = setInterval(() => {
         if (percentage >= 100) {
