@@ -132,6 +132,10 @@ h1, h2, h3 {
     transition: background-color 0.3s;
 }
 
+#header-particles canvas {
+    pointer-events: none !important;
+}
+
 #header-particles {
     position: absolute;
     inset: 0;          /* cobre top, right, bottom, left = 0 */
