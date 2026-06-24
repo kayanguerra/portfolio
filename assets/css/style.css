@@ -121,11 +121,6 @@ h1, h2, h3 {
 
 /* ===================== HEADER / NAV ===================== */
 
-.menu-toggle {
-    position: relative;
-    z-index: 10;
-}
-
 .header {
     position: fixed;
     overflow: hidden;
@@ -151,16 +146,11 @@ h1, h2, h3 {
     pointer-events: none !important;
 }
 
-.menu-toggle {
-    position: relative;
-    z-index: 10;   ← ADICIONA essa linha no bloco existente do .menu-toggle
-}
-
 /* nav fica na frente das partículas */
 .header .container,
 .header .nav-mobile {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .nav {
     display: flex;
@@ -775,6 +765,8 @@ h1, h2, h3 {
         cursor: pointer;
         padding: 4px;
         margin-left: auto;
+        position: relative;
+        z-index: 10;
     }
     .menu-toggle span {
         display: block;
