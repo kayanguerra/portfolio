@@ -120,6 +120,12 @@ h1, h2, h3 {
 }
 
 /* ===================== HEADER / NAV ===================== */
+
+.menu-toggle {
+    position: relative;
+    z-index: 10;
+}
+
 .header {
     position: fixed;
     overflow: hidden;
@@ -132,10 +138,6 @@ h1, h2, h3 {
     transition: background-color 0.3s;
 }
 
-#header-particles canvas {
-    pointer-events: none !important;
-}
-
 #header-particles {
     position: absolute;
     inset: 0;          /* cobre top, right, bottom, left = 0 */
@@ -144,6 +146,16 @@ h1, h2, h3 {
     z-index: 0;
     pointer-events: none; /* mouse passa através, não bloqueia cliques */
 }
+
+#header-particles canvas {
+    pointer-events: none !important;
+}
+
+.menu-toggle {
+    position: relative;
+    z-index: 10;   ← ADICIONA essa linha no bloco existente do .menu-toggle
+}
+
 /* nav fica na frente das partículas */
 .header .container,
 .header .nav-mobile {
