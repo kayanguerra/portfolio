@@ -1,7 +1,7 @@
 <h1>Portfólio</h1>
 <h3>Olá, Bem vindo ao meu projeto de Portfólio</h3>
 
-![tela-portfolio-particles](https://github.com/user-attachments/assets/28531eb6-7d91-4b72-a9e9-19243bb33b65)
+![tela-portfolio-particles](https://github.com/user-attachments/assets/8a2a3f5e-816f-4278-bc93-e0668c0a8d28)
 
 # Resumo do projeto
 Estou desenvolvendo um portfólio com o conhecimento adquirido na plataforma Alura, além de explorar ideias de animações e design de terceiros. O objetivo é transformar este site no meu principal meio para postagem e demonstração das minhas habilidades em desenvolvimento web, com ênfase na prática e na aplicação de conceitos de responsividade.
