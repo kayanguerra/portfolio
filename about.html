@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre | Kayan Guerra</title>
+  <meta name="description" content="Conheça Kayan Guerra — Analista de TI com foco em infraestrutura, Microsoft 365 e redes, pós-graduado em Segurança da Informação.">
+
+  <link rel="icon" type="image/x-icon" href="assets/image/favicon-rmdev.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header" role="banner">
+    <div id="header-particles"></div>
+    <div class="container">
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html" class="nav-logo">Kayan<span> │ Guerra</span></a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html" class="active" aria-current="page">Sobre</a></li>
+          <li><a href="curriculo.html">Currículo</a></li>
+        </ul>
+
+        <a href="contato.html" class="btn btn-primary btn-sm nav-cta">Fale comigo</a>
+
+        <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav-mobile" id="mobile-menu" aria-label="Menu mobile">
+      <a href="index.html">Início</a>
+      <a href="about.html">Sobre</a>
+      <a href="curriculo.html">Currículo</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <main class="page">
+
+    <!-- ABOUT -->
+    <section class="section section--particles" id="about" aria-labelledby="about-title">
+      <div id="about-particles"></div>
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Foto: salve como assets/image/foto-perfil.jpg (retrato, proporção 4:5, ex. 800x1000).
+               Enquanto o arquivo não existir, aparece a moldura com as iniciais. -->
+          <div class="profile-photo" data-aos="fade-up">
+            <img src="assets/image/foto-perfil.jpg" alt="Foto de Kayan Guerra"
+              onerror="this.remove()">
+            <span class="profile-photo-fallback" aria-hidden="true">KG</span>
+          </div>
+
+          <div class="about-text" data-aos="fade-up" data-aos-delay="60">
+            <span class="section-label">Quem sou eu</span>
+            <h1 id="about-title" class="section-title">Prazer, sou Kayan Guerra</h1>
+            <p class="about-role">Analista de Infraestrutura · Redes · Microsoft 365 · Agentes de IA</p>
+
+            <p>
+              Atuo em um time de serviços gerenciados de TI com uma carteira de 42 clientes. Cada um tem ambiente,
+              porte e SLA próprios, e isso exige padronização, priorização e diagnóstico rápido.
+            </p>
+            <p>
+              No dia a dia, cuido de redes e firewalls (Fortinet e pfSense), servidores on-premise e Active Directory
+              e da administração do Microsoft 365: Entra ID, Intune e Exchange Online. Também trabalho com backup e
+              recuperação usando Acronis. Antes disso, atuei em ambiente hospitalar, onde uma falha de TI afeta
+              diretamente o atendimento.
+            </p>
+            <p>
+              Com IA, vou além de usar o Copilot, construo agentes e entendo como eles operam dentro do ecossistema
+              Microsoft, incluindo identidade, permissões, governança e dados. Também uso o Claude e o Copilot para
+              automatizar rotinas e documentar ambientes. Sou certificado AB-900 (Microsoft 365 Copilot and Agent
+              Administration Fundamentals).
+            </p>
+            <p class="about-education">
+              <strong>Formação:</strong> Bacharel em Sistemas de Informação (UNASP-HT) e pós-graduado em Segurança da
+              Informação (Faculdade Descomplica).
+            </p>
+
+            <div class="about-socials" aria-label="Links e redes sociais">
+              <a href="assets/Docs/Kayan Guerra Batista_Analista_TI.pdf" download="CV-Kayan-TI.pdf" class="is-primary">
+                <i class="fa-solid fa-download" aria-hidden="true"></i> Baixar CV
+              </a>
+              <a href="https://www.linkedin.com/in/kayan-guerra-batista-ti/" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+              </a>
+              <a href="https://github.com/kayanguerra" target="_blank" rel="noopener">
+                <i class="fab fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="https://wa.me/5519993427954" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--surface" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div data-aos="fade-up">
+          <span class="section-label">O que utilizo</span>
+          <h2 id="skills-title" class="section-title">Habilidades técnicas</h2>
+          <p class="section-subtitle">
+            Ferramentas e tecnologias com experiência prática, de segurança e redes a desenvolvimento web
+          </p>
+        </div>
+
+        <div class="skills-grid" data-aos="fade-up" data-aos-delay="60">
+          <div class="skill-card"><img src="assets/image/skills-img/pfsense.png" alt=""><p>pfSense</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/Acronis.png" alt=""><p>Acronis</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/365.png" alt=""><p>Microsoft 365</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/WireGuard.png" alt=""><p>WireGuard</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/WinServer.png" alt=""><p>Windows Server</p></div>
+          <div class="skill-card"><i class="fab fa-microsoft skill-icon" aria-hidden="true"></i><p>Entra ID</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/graylog.png" alt=""><p>Graylog</p></div>
+          <div class="skill-card"><img src="assets/image/skills-img/Wireshark.png" alt=""><p>Wireshark</p></div>
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/kalilinux.png" alt=""><p>Kali Linux</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/LGPD.png" alt=""><p>LGPD</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/html5.png" alt=""><p>HTML5</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/css3.png" alt=""><p>CSS3</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/javascript.png" alt=""><p>JavaScript</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/nodejs.png" alt=""><p>Node.js</p></div> -->
+          <!-- <div class="skill-card"><img src="assets/image/skills-img/figma.png" alt=""><p>Figma</p></div> -->
+        </div>
+
+        <div class="soft-skills" data-aos="fade-up">
+          <span class="section-label">Soft skills</span>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item">Trabalho em equipe</div>
+            <div class="soft-skill-item">Pensamento crítico</div>
+            <div class="soft-skill-item">Resolução de problemas</div>
+            <div class="soft-skill-item">Adaptabilidade</div>
+            <div class="soft-skill-item">Organização</div>
+            <div class="soft-skill-item">Resiliência</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section class="section section--particles" id="hobbies" aria-labelledby="hobbies-title">
+      <div id="hobbies-particles"></div>
+      <div class="container">
+        <div class="hobbies-content">
+
+          <div data-aos="fade-up">
+            <span class="section-label">Fora do trabalho</span>
+            <h2 id="hobbies-title" class="section-title">Hobbies</h2>
+            <p>
+              Sou atleta amador de vôlei tanto de quadra quanto de praia e frequento a academia regularmente.
+              Esses hobbies me trazem equilíbrio, disciplina e energia para enfrentar os desafios da tecnologia
+              com foco e criatividade.
+            </p>
+            <p>
+              Acredito que um profissional de TI saudável e equilibrado performa melhor e toma decisões mais claras
+              sob pressão.
+            </p>
+          </div>
+
+          <div class="about-img-wrapper" data-aos="fade-up" data-aos-delay="60">
+            <img src="assets/image/about-img.png" alt="Kayan praticando vôlei">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div id="footer-particles"></div>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">Kayan<span> │ Guerra</span></p>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="about.html">Sobre</a>
+          <a href="curriculo.html">Currículo</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+        <p class="footer-copy">&copy; <span id="year"></span> Kayan Guerra</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/headerAnimation.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 450, offset: 40 });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
