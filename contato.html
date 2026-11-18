@@ -17,9 +17,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- EmailJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>emailjs.init({ publicKey: "wJ3eDqOfb9Cp2l0lc" });</script>
 </head>
 <body>
 
@@ -117,6 +114,12 @@
             <h2>Enviar mensagem</h2>
 
             <form id="contactForm" novalidate>
+
+              <!-- anti-spam: campo invisível que só robôs preenchem -->
+              <div class="form-hp" aria-hidden="true">
+                <label for="site">Não preencha</label>
+                <input type="text" id="site" name="site" tabindex="-1" autocomplete="off">
+              </div>
 
               <div class="form-group">
                 <label for="nome">Nome</label>
@@ -218,11 +221,21 @@
       btn.textContent = 'Enviando';
       status.className = 'form-status';
 
-      emailjs.send('service_rdj4i4w', 'template_7eu8408', {
-        nome:    document.getElementById('nome').value,
-        email:   document.getElementById('email').value,
-        assunto: document.getElementById('assunto').value,
-        message: document.getElementById('mensagem').value
+      // envia para a Cloudflare Pages Function (functions/api/contato.js), que usa o Resend
+      fetch('/api/contato', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome:     document.getElementById('nome').value,
+          email:    document.getElementById('email').value,
+          assunto:  document.getElementById('assunto').value,
+          mensagem: document.getElementById('mensagem').value,
+          site:     document.getElementById('site').value
+        })
+      })
+      .then(function (res) {
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return res.json();
       })
       .then(function () {
         status.textContent = 'Mensagem enviada';
@@ -230,7 +243,7 @@
         form.reset();
       })
       .catch(function (error) {
-        console.log('Erro EmailJS:', error);
+        console.error('Erro ao enviar:', error);
         status.textContent = 'Não foi possível enviar. Tente pelo WhatsApp ou LinkedIn';
         status.className = 'form-status error';
       })

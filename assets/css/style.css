@@ -910,6 +910,7 @@ ul.tech-chips { list-style: none; margin: 0; padding: 0; }
 
 .form-submit-row { display: flex; align-items: center; gap: 16px; margin-top: 24px; flex-wrap: wrap; }
 .form-status { font-size: 14px; display: none; }
+.form-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .form-status.success { color: var(--accent); display: block; }
 .form-status.error   { color: var(--negative); display: block; }
 
